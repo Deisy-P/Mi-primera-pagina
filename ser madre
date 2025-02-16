@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Importancia de Ser Madre</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        /* Fondo animado */
+        #particles-js {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #ff9a9e, #fad0c4);
+            z-index: -1;
+        }
+
+        /* Encabezado */
+        header {
+            background: rgba(255, 140, 140, 0.8);
+            padding: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Contenedor principal */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Imagen */
+        img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Texto */
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: white;
+            text-align: justify;
+        }
+
+        /* Pie de página */
+        footer {
+            background: rgba(255, 140, 140, 0.8);
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Fondo animado -->
+    <div id="particles-js"></div>
+
+    <header>
+        La Importancia de Ser Madre
+    </header>
+
+    <div class="container">
+        <img src="https://source.unsplash.com/800x300/?mother,child" alt="Madre e hijo">
+        <p>
+            Ser madre es una de las experiencias más transformadoras en la vida de una persona. No solo implica criar y educar a un hijo, sino también transmitir amor, valores y enseñanzas que marcarán su futuro.  
+            La maternidad está llena de desafíos, pero también de momentos inolvidables que fortalecen el vínculo entre madre e hijo.  
+            Es un acto de entrega, paciencia y amor incondicional que deja huella en el corazón y en la sociedad.  
+        </p>
+    </div>
+
+    <footer>
+        © 2025 Blog de Texto | Marcela Rodriguez
+    </footer>
+
+    <!-- Particles.js Script -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 3, direction: "none", random: false, out_mode: "out" }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "grab" }, onclick: { enable: true, mode: "push" } },
+                modes: {
+                    grab: { distance: 200, line_linked: { opacity: 1 } },
+                    push: { particles_nb: 4 }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>
